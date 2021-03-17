@@ -9,7 +9,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
     public static final int ITEM_REQUEST = 1;
     private final TextView[] item = new TextView[10];
     private ArrayList<String> itemsList = new ArrayList<>(10);
@@ -18,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         item[0] = findViewById(R.id.item1);
         item[1] = findViewById(R.id.item2);
         item[2] = findViewById(R.id.item3);
@@ -32,16 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState != null) {
             itemsList = savedInstanceState.getStringArrayList("ItemsListStringArray");
-
             int i;
-
             if (itemsList != null && itemsList.size() > 0) {
                 for (i = 0; i < itemsList.size(); i++) {
                     if (itemsList.size() > 10) {
                         Toast.makeText(MainActivity.this, "Cannot add more items to the list", Toast.LENGTH_LONG).show();
                         break;
                     }
-
                     item[i].setVisibility(View.VISIBLE);
                     item[i].setText(itemsList.get(i));
                 }
@@ -51,21 +46,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-
         super.onSaveInstanceState(outState);
-
         if (itemsList.size() != 0) {
             outState.putStringArrayList("ItemsListStringArray", itemsList);
         }
     }
 
     public void addItem(View view) {
-
         Intent intent = new Intent(this, SecondActivity.class);
-
         startActivityForResult(intent, ITEM_REQUEST);
     }
-    
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
