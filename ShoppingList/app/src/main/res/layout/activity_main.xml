@@ -18,60 +18,70 @@
             android:id="@+id/list_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
 
         <TextView
             android:id="@+id/list_10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="10dp" />
     </LinearLayout>
 
